@@ -1,0 +1,67 @@
+Introduction
+
+Roulette is a luck-based Game_Window where a bet is placed on the outcome
+of a ball being released into a spinning wheel of numbers.
+
+How to
+
+At the top of the screen; the level which you are on, your score,
+your current balance and your target, for the level, are displayed.
+
+A bet is made by; placing a number into the box, which is either above
+or below a given bet type, and clicking the 'place bet' button.
+
+This will bring up the result of the wheel spin and the amount won or
+lost, in the box above the button.
+
+When the player's balance reaches the target, the player will go to
+the next level.
+
+Types of bet (Note: 1/1 stands for 1 to 1)
+
+Outside bets
+
+1 to 18
+
+Win if the result is between 1 and 18 inclusively. Return = 1/1.
+
+Even
+
+Win if the result is any even number. Return = 1/1.
+
+Black
+
+Win if the result is any black number. Return = 1/1.
+
+Red
+
+Win if the result is any red number. Return = 1/1.
+
+Odd
+
+Win if the result is any odd number. Return = 1/1.
+
+19 to 36
+
+Win if the result is between 19 and 36 inclusively. Return = 1/1.
+
+1st 12
+
+Win if the result is between 1 and 12 inclusively. Return = 2/1.
+
+2nd 12
+
+Win if the result is between 13 and 24 inclusively. Return = 2/1.  
+
+3rd 12
+
+Win if the result is between 25 and 36 inclusively. Return = 2/1.
+
+Inside Bets
+
+Single
+
+A bet on single number. Win if the result is the selected number. Return = 35/1.
+
+Note: Single bets can be combined (It is possible to bet on more than one number
+          at a time).

@@ -1,0 +1,7 @@
+﻿  game_window.cpp
+c:\users\danny\documents\daniel tyrer- c++ project source code\bet_window.h(32): warning C4154: deletion of an array expression; conversion to pointer supplied
+c:\users\danny\documents\daniel tyrer- c++ project source code\game_window.cpp(338): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Bet_Calculator.cpp
+c:\users\danny\documents\daniel tyrer- c++ project source code\bet_calculator.h(33): warning C4154: deletion of an array expression; conversion to pointer supplied
+  Generating Code...
+  Roulette.vcxproj -> C:\Users\Danny\Documents\Library\Software Development\Projects\Roulette\Version 2\RouletteV2.0\Debug\Roulette.exe

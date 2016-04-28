@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9C05148E-4135-403A-AA5F-513317D46472}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Roulette</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>fltk.lib;fltkjpeg.lib;fltkimages.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Bet_Calculator.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Bet_Window.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\datfile_window.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\endgame_window.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\game_window.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Highscore_List.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Innerbet_Window.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Inside_Window.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\JPEG_Image_Box.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Main.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\message_box.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\notification_window.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Outerbet_Window.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\outside_window.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\player.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Question_Window.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Quit_Window.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\roulette_menu.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Score_Data.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Score_Window.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Startup_Window.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Useful_Functions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Bet_Calculator.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Bet_Window.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Datfile_Window.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Endgame_Window.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Game_Window.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Highscore_List.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Innerbet_Window.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Inside_Window.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\JPEG_Image_Box.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Message_Box.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Notification_Window.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Outerbet_Window.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Outside_Window.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Player.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Question_Window.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Quit_Window.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Roulette_Menu.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Score_Data.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Score_Window.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Startup_Window.h" />
+    <ClInclude Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Useful_Functions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas10.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas11.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas12.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas13.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas14.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas2.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas3.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas4.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas5.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas6.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas7.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas8.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\Cas9.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\table.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel1.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel10.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel11.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel12.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel13.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel14.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel15.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel16.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel17.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel18.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel19.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel2.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel20.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel21.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel22.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel23.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel24.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel25.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel26.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel27.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel28.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel29.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel3.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel30.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel31.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel32.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel33.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel34.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel35.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel36.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel4.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel5.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel6.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel7.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel8.jpg" />
+    <Image Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\wheel9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\highscore.dat" />
+    <None Include="..\..\..\..\..\..\..\Daniel Tyrer- C++ Project Source Code\instructions.dat" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
